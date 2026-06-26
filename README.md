@@ -2,6 +2,7 @@
 
 ブラウザで動作する本格2Dモンスター収集RPGです。
 
+
 ## 遊び方
 
 1. `index.html` をローカルサーバー経由でブラウザで開く
@@ -110,16 +111,23 @@
 - セーブデータからの復元（タイトル画面「つづきから」）
 - 全滅時は最後に回復した町へ自動復帰
 
+
+## Pythonについて
+
+Pythonが入っていない場合は以下からインストールしてください  
+https://www.python.org/downloads/
+
+## 必要環境
+
+- Python 3（`python -m http.server` を使う場合）
+- Node.js（`npx serve` を使う場合・任意）
+
 ## ローカルサーバーでの起動
-
-```bash
-# Python 3
-python -m http.server 8080
-# または
+```
+# ゲームフォルダへ移動
+cd "C:\monsterGet/main"
+# ローカルサーバー起動
 py -m http.server 8080
-
-# Node.js
-npx serve .
 ```
 
 `http://localhost:8080` でプレイ。
