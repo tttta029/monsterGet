@@ -127,7 +127,11 @@ https://www.python.org/downloads/
 # ゲームフォルダへ移動
 cd "C:\monsterGet/main"
 # ローカルサーバー起動
+# Pythonの場合
 py -m http.server 8080
+
+# Node.jsの場合
+npx serve .
 ```
 
 `http://localhost:8080` でプレイ。
