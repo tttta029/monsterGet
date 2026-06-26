@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>モンスターコレクト - 2D Monster RPG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <!-- 上画面: メイン表示（マップ/バトルシーン） -->
+    <div id="upper-screen">
+      <canvas id="game-canvas" width="800" height="360"></canvas>
+      <div id="upper-overlay">
+        <div id="hud"></div>
+        <div id="minimap-info"></div>
+        <div id="dialog-box"></div>
+        <div id="battle-scene-area"></div>
+      </div>
+    </div>
+
+    <!-- 下画面: 操作・情報UI -->
+    <div id="lower-screen">
+      <div id="lower-content">
+        <!-- マップ時: パーティ情報 / バトル時: コマンド -->
+        <div id="party-panel"></div>
+        <div id="battle-commands-panel"></div>
+      </div>
+    </div>
+
+    <!-- フェードトランジション -->
+    <div id="fade-overlay"></div>
+
+    <!-- メニューオーバーレイ（全画面） -->
+    <div id="menu-overlay"></div>
+
+    <!-- スタート画面 -->
+    <div id="start-screen">
+      <h1>モンスターコレクト</h1>
+      <p>〜 Monster Collect RPG 〜</p>
+      <div id="starter-area"></div>
+      <button id="start-btn" style="display:none;">冒険に出る！</button>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/monster.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/battle.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

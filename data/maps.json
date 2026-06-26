@@ -1,0 +1,187 @@
+{
+  "maps": [
+    {
+      "id": "town1",
+      "name": "はじまりの町",
+      "type": "town",
+      "width": 20,
+      "height": 15,
+      "connections": {"south": "field1"},
+      "npcs": [
+        {"x":9,"y":5,"type":"center","targetMap":"center1_inside","dialog":""},
+        {"x":9,"y":7,"type":"guide","dialog":"モンスターセンターで回復・ボックス・ショップが使えるよ！南に草むらがあるぞ。"}
+      ],
+      "tiles": "town"
+    },
+    {
+      "id": "center1_inside",
+      "name": "モンスターセンター（はじまりの町）",
+      "type": "building",
+      "width": 10,
+      "height": 8,
+      "connections": {},
+      "npcs": [
+        {"x":5,"y":2,"type":"healer","dialog":"みんな元気になったよ！"},
+        {"x":3,"y":2,"type":"box","dialog":"ボックスへどうぞ。"},
+        {"x":7,"y":2,"type":"shop","dialog":"いらっしゃい！"},
+        {"x":5,"y":7,"type":"exit","targetMap":"town1","targetEntry":"center"}
+      ],
+      "tiles": "town"
+    },
+    {"id":"field1","name":"みどりの草原","type":"field","width":25,"height":20,"connections":{"north":"town1","east":"field2","south":"field3"},"encounters":[1,3,5,7,9,11,21,23,31,35],"encounterRate":0.15,"tiles":"grass"},
+    {"id":"field2","name":"いかずちの丘","type":"field","width":25,"height":20,"connections":{"west":"field1","south":"field4"},"encounters":[7,8,11,12,13,15,25,29,33,37],"encounterRate":0.18,"tiles":"hill"},
+    {"id":"field3","name":"灼熱の谷","type":"field","width":25,"height":20,"connections":{"north":"field1","east":"field4","south":"town2"},"encounters":[1,2,9,10,19,21,22,23,24,32,38],"encounterRate":0.18,"tiles":"lava"},
+    {"id":"field4","name":"霧の森","type":"field","width":25,"height":20,"connections":{"north":"field2","west":"field3","south":"field5"},"encounters":[5,6,15,16,17,25,26,27,29,30,34,39],"encounterRate":0.20,"tiles":"forest"},
+    {"id":"field5","name":"竜の山道","type":"field","width":25,"height":20,"connections":{"north":"field4"},"encounters":[2,4,8,10,14,18,20,22,24,26,27,28,30,36,40],"encounterRate":0.22,"tiles":"mountain"},
+    {
+      "id": "town2",
+      "name": "港町マリーナ",
+      "type": "town",
+      "width": 20,
+      "height": 15,
+      "connections": {"north": "field3", "south": "field6"},
+      "npcs": [
+        {"x":9,"y":5,"type":"center","targetMap":"center2_inside","dialog":""},
+        {"x":9,"y":10,"type":"guide","dialog":"南に進むと上級エリアだ。Lv15以上ないと厳しいぞ！"}
+      ],
+      "tiles": "town"
+    },
+    {
+      "id": "center2_inside",
+      "name": "モンスターセンター（港町マリーナ）",
+      "type": "building",
+      "width": 10,
+      "height": 8,
+      "connections": {},
+      "npcs": [
+        {"x":5,"y":2,"type":"healer","dialog":"お疲れ様！全回復しますね。"},
+        {"x":3,"y":2,"type":"box","dialog":"ボックスです。整理していってね。"},
+        {"x":7,"y":2,"type":"shop","dialog":"珍しいアイテムもあるよ！"},
+        {"x":5,"y":7,"type":"exit","targetMap":"town2","targetEntry":"center"}
+      ],
+      "tiles": "town"
+    },
+    {"id":"field6","name":"烈風の峡谷","type":"field","width":25,"height":20,"connections":{"north":"town2","east":"field7","south":"field8"},"encounters":[32,33,36,38,40,41,42,43,44,45],"encounterRate":0.20,"tiles":"hill"},
+    {"id":"field7","name":"深淵の洞窟","type":"field","width":25,"height":20,"connections":{"west":"field6","south":"town3"},"encounters":[34,37,39,42,44,46,47,48,49,50],"encounterRate":0.22,"tiles":"mountain"},
+    {"id":"field8","name":"禁断の火山","type":"field","width":25,"height":20,"connections":{"north":"field6","east":"town3"},"encounters":[32,36,38,41,43,45,46,48,49,50],"encounterRate":0.22,"tiles":"lava"},
+    {
+      "id": "town3",
+      "name": "天空の都シエル",
+      "type": "town",
+      "width": 20,
+      "height": 15,
+      "connections": {"north": "field7", "west": "field8", "south": "field9", "east": "field13"},
+      "npcs": [
+        {"x":9,"y":5,"type":"center","targetMap":"center3_inside","dialog":""},
+        {"x":9,"y":7,"type":"guide","dialog":"南には未知の大陸、東には風の回廊が広がっている。Lv25以上で挑め！"}
+      ],
+      "tiles": "town"
+    },
+    {
+      "id": "center3_inside",
+      "name": "モンスターセンター（天空の都）",
+      "type": "building",
+      "width": 10,
+      "height": 8,
+      "connections": {},
+      "npcs": [
+        {"x":5,"y":2,"type":"healer","dialog":"ここまで来るとは大したものだ。全回復！"},
+        {"x":3,"y":2,"type":"box","dialog":"ボックスどうぞ。"},
+        {"x":7,"y":2,"type":"shop","dialog":"最高級のアイテムだよ！"},
+        {"x":5,"y":7,"type":"exit","targetMap":"town3","targetEntry":"center"}
+      ],
+      "tiles": "town"
+    },
+    {"id":"field9","name":"嵐の荒野","type":"field","width":25,"height":20,"connections":{"north":"town3","east":"field10","south":"field11"},"encounters":[32,40,41,45,46,48,50,64,65,66],"encounterRate":0.20,"tiles":"hill"},
+    {"id":"field10","name":"暗黒の深森","type":"field","width":25,"height":20,"connections":{"west":"field9","south":"town4"},"encounters":[37,40,47,49,58,60,65,67,68,70],"encounterRate":0.22,"tiles":"forest"},
+    {"id":"field11","name":"灼熱の地底","type":"field","width":25,"height":20,"connections":{"north":"field9","east":"field12"},"encounters":[32,36,41,45,61,65,66,69,70],"encounterRate":0.22,"tiles":"lava"},
+    {"id":"field12","name":"終焉の頂","type":"field","width":25,"height":20,"connections":{"west":"field11","south":"town5"},"encounters":[28,40,46,48,50,61,62,63,67,70],"encounterRate":0.25,"tiles":"mountain"},
+    {
+      "id": "town4",
+      "name": "深緑の隠れ里",
+      "type": "town",
+      "width": 20,
+      "height": 15,
+      "connections": {"north": "field10"},
+      "npcs": [
+        {"x":9,"y":5,"type":"center","targetMap":"center4_inside","dialog":""},
+        {"x":9,"y":7,"type":"guide","dialog":"ここまで辿り着くとは…。南東に最後の試練がある。"}
+      ],
+      "tiles": "town"
+    },
+    {
+      "id": "center4_inside",
+      "name": "モンスターセンター（隠れ里）",
+      "type": "building",
+      "width": 10,
+      "height": 8,
+      "connections": {},
+      "npcs": [
+        {"x":5,"y":2,"type":"healer","dialog":"全回復するよ。頑張れ！"},
+        {"x":3,"y":2,"type":"box","dialog":"ボックスです。"},
+        {"x":7,"y":2,"type":"shop","dialog":"最強装備だ！"},
+        {"x":5,"y":7,"type":"exit","targetMap":"town4","targetEntry":"center"}
+      ],
+      "tiles": "town"
+    },
+    {
+      "id": "town5",
+      "name": "伝説の聖域",
+      "type": "town",
+      "width": 20,
+      "height": 15,
+      "connections": {"north": "field12"},
+      "npcs": [
+        {"x":9,"y":5,"type":"center","targetMap":"center5_inside","dialog":""},
+        {"x":9,"y":7,"type":"guide","dialog":"ここは世界の果て。伝説のモンスターが眠る場所だ。"}
+      ],
+      "tiles": "town"
+    },
+    {
+      "id": "center5_inside",
+      "name": "モンスターセンター（聖域）",
+      "type": "building",
+      "width": 10,
+      "height": 8,
+      "connections": {},
+      "npcs": [
+        {"x":5,"y":2,"type":"healer","dialog":"最後の戦いに備えよう。全回復！"},
+        {"x":3,"y":2,"type":"box","dialog":"ボックスです。"},
+        {"x":7,"y":2,"type":"shop","dialog":"伝説級のアイテムだ！"},
+        {"x":5,"y":7,"type":"exit","targetMap":"town5","targetEntry":"center"}
+      ],
+      "tiles": "town"
+    },
+    {"id":"field13","name":"風の回廊","type":"field","width":25,"height":20,"connections":{"west":"town3","east":"field14"},"encounters":[33,38,54,56,64,68,31,12],"encounterRate":0.20,"tiles":"hill"},
+    {"id":"field14","name":"雲海峡谷","type":"field","width":25,"height":20,"connections":{"west":"field13","east":"field15"},"encounters":[38,46,48,56,64,67,68,70],"encounterRate":0.22,"tiles":"mountain"},
+    {"id":"field15","name":"雷鳴の遺跡","type":"field","width":25,"height":20,"connections":{"west":"field14","east":"town6"},"encounters":[8,48,54,61,62,63,67,69,70],"encounterRate":0.25,"tiles":"lava"},
+    {
+      "id": "town6",
+      "name": "雷神の祠",
+      "type": "town",
+      "width": 20,
+      "height": 15,
+      "connections": {"west": "field15"},
+      "npcs": [
+        {"x":9,"y":5,"type":"center","targetMap":"center6_inside","dialog":""},
+        {"x":9,"y":7,"type":"guide","dialog":"ここは世界の東端。最強のモンスターたちが棲む地だ。"}
+      ],
+      "tiles": "town"
+    },
+    {
+      "id": "center6_inside",
+      "name": "モンスターセンター（雷神の祠）",
+      "type": "building",
+      "width": 10,
+      "height": 8,
+      "connections": {},
+      "npcs": [
+        {"x":5,"y":2,"type":"healer","dialog":"全回復だ。最後まで戦い抜け！"},
+        {"x":3,"y":2,"type":"box","dialog":"ボックスです。"},
+        {"x":7,"y":2,"type":"shop","dialog":"究極のアイテムだ！"},
+        {"x":5,"y":7,"type":"exit","targetMap":"town6","targetEntry":"center"}
+      ],
+      "tiles": "town"
+    }
+  ]
+}

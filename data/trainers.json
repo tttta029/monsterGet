@@ -1,0 +1,19 @@
+[
+  {"id":"t1","name":"たんぱんこぞうのタケシ","map":"field1","party":[{"id":11,"level":4},{"id":9,"level":5}],"reward":300,"dialog":"おれの虫とりテクを見せてやる！"},
+  {"id":"t2","name":"ミニスカートのサキ","map":"field1","party":[{"id":5,"level":5},{"id":17,"level":4}],"reward":350,"dialog":"あたしのモンスター、かわいいでしょ？"},
+  {"id":"t3","name":"キャンプボーイのケン","map":"field2","party":[{"id":7,"level":6},{"id":11,"level":7}],"reward":500,"dialog":"ここは俺のフィールドだ！"},
+  {"id":"t4","name":"じゅくがえりのマナ","map":"field2","party":[{"id":25,"level":7},{"id":13,"level":6}],"reward":550,"dialog":"勉強の息抜きにバトルよ！"},
+  {"id":"t5","name":"かいじゅうマニアのゴロウ","map":"field3","party":[{"id":1,"level":8},{"id":9,"level":9},{"id":23,"level":8}],"reward":800,"dialog":"でっかいモンスターが好きなんだ！"},
+  {"id":"t6","name":"ピクニックガールのユイ","map":"field3","party":[{"id":3,"level":9},{"id":35,"level":8}],"reward":700,"dialog":"ピクニックの邪魔しないで！"},
+  {"id":"t7","name":"エリートトレーナーのリョウ","map":"field4","party":[{"id":16,"level":11},{"id":14,"level":12},{"id":27,"level":10}],"reward":1200,"dialog":"本気で行くぞ。覚悟はいいか？"},
+  {"id":"t8","name":"バトルガールのアヤメ","map":"field4","party":[{"id":22,"level":11},{"id":6,"level":12}],"reward":1000,"dialog":"全力の一撃を受けてみなさい！"},
+  {"id":"t9","name":"やまおとこのゲンゾウ","map":"field5","party":[{"id":10,"level":14},{"id":24,"level":13},{"id":36,"level":14}],"reward":1500,"dialog":"この山は俺が守る！"},
+  {"id":"t10","name":"エリートトレーナーのカスミ","map":"field5","party":[{"id":4,"level":15},{"id":34,"level":14}],"reward":1400,"dialog":"水の力、見せてあげる。"},
+  {"id":"t11","name":"ベテラントレーナーのシン","map":"field6","party":[{"id":32,"level":18},{"id":38,"level":17},{"id":41,"level":18}],"reward":2500,"dialog":"ここから先は甘くないぞ。"},
+  {"id":"t12","name":"ドラゴンつかいのリュウジ","map":"field7","party":[{"id":27,"level":20},{"id":40,"level":22},{"id":46,"level":21}],"reward":3500,"dialog":"竜の力を見せてやる！"},
+  {"id":"t13","name":"サイキッカーのミレイ","map":"field8","party":[{"id":26,"level":22},{"id":39,"level":21},{"id":67,"level":23}],"reward":3500,"dialog":"あなたの心、読ませてもらうわ。"},
+  {"id":"t14","name":"エースのヒカル","map":"field9","party":[{"id":61,"level":38},{"id":48,"level":40},{"id":70,"level":42}],"reward":6000,"dialog":"最強の座は譲らない！"},
+  {"id":"t15","name":"しんかんせんのソウジ","map":"field13","party":[{"id":54,"level":28},{"id":33,"level":30},{"id":8,"level":29}],"reward":4000,"dialog":"稲妻のスピードで倒す！"},
+  {"id":"t16","name":"ゴーストハンターのレイ","map":"field14","party":[{"id":30,"level":38},{"id":47,"level":40},{"id":65,"level":39}],"reward":5500,"dialog":"霊の声が聞こえるか…？"},
+  {"id":"t17","name":"チャンピオンのタイガ","map":"field15","party":[{"id":62,"level":50},{"id":61,"level":52},{"id":70,"level":55}],"reward":10000,"dialog":"世界最強の名にかけて！全力で来い！"}
+]

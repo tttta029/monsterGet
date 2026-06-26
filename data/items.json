@@ -1,0 +1,8 @@
+[
+  {"id":1,"name":"キャプチャーボール","price":160,"type":"capture","captureRate":1.0,"desc":"基本の捕獲アイテム。"},
+  {"id":2,"name":"スーパーボール","price":480,"type":"capture","captureRate":2.0,"desc":"性能の良い捕獲アイテム。"},
+  {"id":3,"name":"ハイパーボール","price":960,"type":"capture","captureRate":3.0,"desc":"高性能な捕獲アイテム。"},
+  {"id":4,"name":"回復薬","price":240,"type":"heal","healAmount":50,"desc":"HPを50回復する。"},
+  {"id":5,"name":"高級回復薬","price":560,"type":"heal","healAmount":120,"desc":"HPを120回復する。"},
+  {"id":6,"name":"全回復薬","price":1200,"type":"heal","healAmount":9999,"desc":"HPを全回復する。"}
+]
